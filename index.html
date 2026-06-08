@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XV Años - Alison Flores Pretel</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="welcomeScreen" class="welcome-screen">
+  <div id="flowerRain" class="flower-rain" aria-hidden="true"></div>
+  <div class="envelope-container">
+    <div id="envelope" class="envelope">
+      <div class="flap"></div>
+      <div class="letter">
+        <h2>MIS XV AÑOS</h2>
+        <h1>ALISON FLORES PRETEL</h1>
+        <p>Toca el sobre para abrir</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="mainContent" class="hidden">
+<div id="contentFlowers" class="flower-rain content-flowers" aria-hidden="true"></div>
+<audio id="bgMusic" loop>
+<source src="music/dream-lisa.mp3" type="audio/mpeg">
+</audio>
+
+<div id="musicBtn" class="music-disc">
+<img src="img/portamusic.jpg" alt="Alison">
+</div>
+
+<section class="music-cover">
+<div class="music-cover-content">
+<h2>Mis Quince Años</h2>
+<div class="music-player">
+<input id="musicProgress" class="music-progress" type="range" min="0" max="100" value="0" aria-label="Progreso de la canción">
+<div class="music-controls" aria-label="Controles de música">
+<button type="button" class="control-btn" aria-label="Mezclar canción">↬</button>
+<button type="button" id="backBtn" class="control-btn" aria-label="Regresar canción">‹</button>
+<button type="button" id="coverPlayBtn" class="control-btn heart-btn" aria-label="Reproducir o pausar canción">♥</button>
+<button type="button" id="nextBtn" class="control-btn" aria-label="Adelantar canción">›</button>
+<button type="button" class="control-btn" aria-label="Repetir canción">↻</button>
+</div>
+<p>Presiona el ♥ para escuchar mi canción</p>
+</div>
+</div>
+</section>
+
+<section class="name-image-section">
+<img src="img/img-nombre.jpg" class="name-image" alt="Alison Flores">
+<h1>ALISON FLORES</h1>
+</section>
+
+<section class="section">
+<h2>Cuenta Regresiva</h2>
+<div id="countdown" class="countdown"></div>
+</section>
+
+<section class="section">
+<h2>Con el amor de mis padres</h2>
+<p>Sheyla Pretel Mori</p>
+<p>&</p>
+<p>Juan Flores Pretel</p>
+</section>
+
+<section class="section">
+<h2>Ubicación</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1951.1487090304913!2d-77.1315678!3d-12.0230338!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1780852753920!5m2!1ses-419!2spe"></iframe>
+</section>
+
+<section class="section">
+<h2>Galería</h2>
+<div class="gallery">
+<img src="img/foto1.jpg" alt="Foto de Alison 1">
+<img src="img/foto2.jpg" alt="Foto de Alison 2">
+<img src="img/foto3.jpg" alt="Foto de Alison 3">
+</div>
+</section>
+
+<section class="section">
+<a class="wa" href="https://wa.me/51996066679?text=Hola,%20confirmo%20mi%20asistencia%20a%20los%20XV%20años%20de%20Alison" target="_blank">Confirmar asistencia</a>
+</section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

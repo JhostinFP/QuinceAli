@@ -72,16 +72,17 @@ nextBtn.addEventListener('click',()=>{
  music.currentTime=Math.min(music.duration,music.currentTime+10);
 });
 
-const target=new Date('2026-06-27T20:00:00').getTime();
+const target=new Date('2026-06-27T21:00:00').getTime();
 function update(){
  const d=target-Date.now();
  const el=document.getElementById('countdown');
  if(!el)return;
- if(d<=0){el.innerHTML='¡El gran día ha llegado!';return;}
+ if(d<=0){el.innerHTML='El gran dia ha llegado';return;}
  const days=Math.floor(d/86400000);
  const hrs=Math.floor((d%86400000)/3600000);
  const min=Math.floor((d%3600000)/60000);
  const sec=Math.floor((d%60000)/1000);
- el.innerHTML=`<div><b>${days}</b><br>Días</div><div><b>${hrs}</b><br>Horas</div><div><b>${min}</b><br>Min</div><div><b>${sec}</b><br>Seg</div>`;
+ el.innerHTML=`<div><b>${days}</b><span>Dias</span></div><div><b>${hrs}</b><span>Horas</span></div><div><b>${min}</b><span>Min</span></div><div><b>${sec}</b><span>Seg</span></div>`;
 }
-update();setInterval(update,1000);
+update();
+setInterval(update,1000);

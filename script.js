@@ -23,13 +23,18 @@ function createFlowers(container,total=34){
 }
 
 createFlowers(flowerRain,34);
-createFlowers(contentFlowers,26);
+
+function startContentFlowers(){
+ contentFlowers.innerHTML='';
+ createFlowers(contentFlowers,32);
+}
 
 envelope.addEventListener('click',()=>{
  envelope.classList.add('open');
  setTimeout(()=>{
   screen.style.display='none';
   content.classList.remove('hidden');
+  startContentFlowers();
  },1000);
 });
 
@@ -71,6 +76,7 @@ const target=new Date('2026-06-27T20:00:00').getTime();
 function update(){
  const d=target-Date.now();
  const el=document.getElementById('countdown');
+ if(!el)return;
  if(d<=0){el.innerHTML='¡El gran día ha llegado!';return;}
  const days=Math.floor(d/86400000);
  const hrs=Math.floor((d%86400000)/3600000);

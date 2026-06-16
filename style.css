@@ -1,6 +1,33 @@
 body{margin:0;font-family:Montserrat,sans-serif;background:#f8ecec;color:#6b5555}
 .hidden{display:none}
 .welcome-screen{position:relative;min-height:100vh;display:flex;justify-content:center;align-items:center;overflow:hidden;background:url("img/portada.jpg") center/cover no-repeat}
+.open-invitation-text{
+    margin-top: 18px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: #c9a15b;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 6px rgba(0,0,0,.25);
+    animation: pulseText 2s ease-in-out infinite;
+}
+
+.open-invitation-text strong{
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 700;
+    color: #e6c27a;
+}
+
+@keyframes pulseText{
+    0%,100%{
+        transform: scale(1);
+        opacity: .9;
+    }
+    50%{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
 .welcome-screen::after{content:"";position:absolute;inset:0;background:rgba(255,246,248,.16);z-index:0}
 .flower-rain{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1}
 .flower{

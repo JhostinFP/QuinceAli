@@ -6,7 +6,7 @@ body{margin:0;font-family:Montserrat,sans-serif;background:#f8ecec;color:#6b5555
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.4rem;
-    color: #c9a15b;
+    color: #000000;
     letter-spacing: 0.5px;
     text-shadow: 0 2px 6px rgba(0,0,0,.25);
     animation: pulseText 2s ease-in-out infinite;
@@ -64,7 +64,7 @@ font-size: 0.95rem;
 .quince-com-frame img{display:block;width:100%;height:auto}
 .countdown-title{
     position: absolute;
-    top: 59%; /* ajusta según tu imagen */
+    top: 60.6%; /* ajusta según tu imagen */
     left: 50%;
     transform: translateX(-50%);
     
@@ -75,14 +75,14 @@ font-size: 0.95rem;
 
     text-shadow:
         0 0 5px rgba(212,175,55,.4),
-        0 1px 2px rgba(0,0,0,.3);
+        0 1px 2px rgba(74, 48, 48, 0);
 
     letter-spacing: 1px;
     text-align: center;
     width: 100%;
     pointer-events: none;
 }
-.countdown-overlay{position:absolute;top:60.40%;left:2.8%;width:94.4%;height:2.28%;display:flex;align-items:center;justify-content:center;gap:4.2%;box-sizing:border-box;padding:0 4.5%;font-family:'Cormorant Garamond',serif;color:#9b6c28;text-align:center;text-shadow:0 1px 0 rgba(255,255,255,.65);z-index:2}
+.countdown-overlay{position:absolute;top:60.8%;left:2.8%;width:94.4%;height:2.28%;display:flex;align-items:center;justify-content:center;gap:4.2%;box-sizing:border-box;padding:0 4.5%;font-family:'Cormorant Garamond',serif;color:#9b6c28;text-align:center;text-shadow:0 1px 0 rgba(255,255,255,.65);z-index:2}
 .countdown-overlay div{min-width:20%;line-height:.96}
 .countdown-overlay b{display:block;font-family:Montserrat,sans-serif;font-size:clamp(1.7rem,4.7vw,1.55rem);font-weight:500;color:#a96d22;letter-spacing:0}
 .countdown-overlay span{display:block;margin-top:1.5px;font-size:clamp(0.65rem,2vw,.66rem);font-weight:700;text-transform:uppercase;letter-spacing:0;color:#8a5d24}

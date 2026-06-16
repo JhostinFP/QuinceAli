@@ -64,7 +64,7 @@ font-size: 0.95rem;
 .quince-com-frame img{display:block;width:100%;height:auto}
 .countdown-title{
     position: absolute;
-    top: 56%; /* ajusta según tu imagen */
+    top: 59%; /* ajusta según tu imagen */
     left: 50%;
     transform: translateX(-50%);
     
